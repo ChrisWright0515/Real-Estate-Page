@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Page</title>
+
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+   <link rel="stylesheet" href="../RealEstatePage/slick-1.8.1/slick/slick-theme.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lato:wght@100;300;400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="RealEstatePage.css">
+</head>
+<body>
+    <header id="nav" class="clear">
+        <nav  class="nav row">
+            <div class="logo"><a target="_blank" href="https://codepen.io/onclickmedia/full/vqpVvX"><h1>STATED.</h1></a></div>
+            <ul class="menu ">
+                <a href="#" class="active"><li>Home</li></a>
+                <a href="#prop"><li>Properties</li></a>
+                <a href="#agents"><li>Agents</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#news"><li>News</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+                <button id="hamBtn" onclick="showMenu()" class="hamBtn"><i class="fa-solid fa-bars"></i></button> 
+        </nav>
+        
+    </header>
+    <ul id="menuHidden" class="menuhidden ">
+        <a href="#" class="active"><li>Home</li></a>
+        <a href="#prop"><li>Properties</li></a>
+        <a href="#agents"><li>Agents</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#news"><li>News</li></a>
+        <a href="#contact"><li>Contact</li></a>
+    </ul>
+
+    <section class="hero">
+        <div class="heroText row">
+            <h1>Buy And Sell Real Estate Properties</h1>
+            <p>Lorem ipsum dolor sit amet consectectur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+        </div>
+    </section>
+
+    <article>
+        <div class="worksSection">
+            <h1 class="row title">How It Works</h1>
+            <div class="howItWorks">
+                <div class="works">
+                    <ion-icon name="home"></ion-icon>
+                    <div>
+                        <h3>Find A Property</h3>
+                        <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="works">
+                    <ion-icon name="cash"></ion-icon>
+                    <div>
+                        <h3>Buy A Property</h3>
+                        <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="works">
+                    <ion-icon name="analytics"></ion-icon>
+                    <div>
+                        <h3>Invest</h3>
+                        <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="allProperties section ">
+            <div class="propertiesTitle ">
+                <h1  id="prop" class="title">Properties</h1>
+                <div class="next ">
+                    <p id="slick-prev1"></p>
+                    <p>/</p>
+                    <p id="slick-next1"></p>
+                </div>
+            </div>
+
+            <div style="display: flex;" class=" slider slick-carousel ">
+                <div class="column">
+                    <img src="../RealEstatePage/property_1.jpg" alt="">
+                    <h1 class="price">$3,400,000</h1>
+                    <div class="size">
+                        <p class="beds">6 Beds</p>
+                        <p class="baths">4 Baths</p>
+                        <p class="sqft">4,200 sqft</p>
+                     </div>
+                    <p class="address">104 Lampeter Rd Lancaster PA</p>
+                </div>
+
+                <div class="column">
+                    <img src="../RealEstatePage/property_2.jpg" alt="">
+                    <h1 class="price">$3,400,000</h1>
+                    <div class="size">
+                        <p class="beds">6 Beds</p>
+                        <p class="baths">4 Baths</p>
+                        <p class="sqft">4,200 sqft</p>
+                     </div>
+                    <p class="address">104 Lampeter Rd Lancaster PA</p>
+                </div>
+
+                <div class="column">
+                    <img src="../RealEstatePage/property_4.jpg" alt="">
+                    <h1 class="price">$3,400,000</h1>
+                    <div class="size">
+                        <p class="beds">6 Beds</p>
+                        <p class="baths">4 Baths</p>
+                        <p class="sqft">4,200 sqft</p>
+                     </div>
+                    <p class="address">104 Lampeter Rd Lancaster PA</p>
+                </div>
+
+                <div class="column">
+                    <img  src="../RealEstatePage/property_3.jpg" alt="">
+                    <h1 class="price">$3,400,000</h1>
+                    <div class="size">
+                        <p class="beds">6 Beds</p>
+                        <p class="baths">4 Baths</p>
+                        <p class="sqft">4,200 sqft</p>
+                     </div>
+                    <p class="address">104 Lampeter Rd Lancaster PA</p>
+                </div>
+
+                <div class="column">
+                    <img src="../RealEstatePage/property_2.jpg" alt="">
+                    <h1 class="price">$3,400,000</h1>
+                    <div class="size">
+                        <p class="beds">6 Beds</p>
+                        <p class="baths">4 Baths</p>
+                        <p class="sqft">4,200 sqft</p>
+                     </div>
+                    <p class="address">104 Lampeter Rd Lancaster PA</p>
+                </div>
+
+            </div>
+            <div class="btn">
+                <button >View All Property Listings</button>
+            </div>
+        </div>
+        <div class="agents row ">
+            <div class="agentTitle row">
+                <h1 id="agents" class="title ">Agents</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis</p>
+            </div>
+            <div class="agentGrid  row">
+                <!-- <div class="row flexRow"> -->
+                    <div class="column agentColumn">
+                        <img src="../RealEstatePage/person_1.jpg" alt="">
+                        <h4>Kaiara Spencer</h4>
+                        <p>Real Estate Agent</p>
+                    </div>
+                    <div class="column agentColumn">
+                        <img src="../RealEstatePage/person_2.jpg" alt="">
+                        <h4>Dave Simpson</h4>
+                        <p>Real Estate Agent</p>
+                    </div>
+                    <div class="column agentColumn">
+                        <img src="../RealEstatePage/person_3.jpg" alt="">
+                        <h4>Joe Mama</h4>
+                        <p>Real Estate Agent</p>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="row flexRow"> -->
+                    <div class="column agentColumn">
+                        <img src="../RealEstatePage/person_4.jpg" alt="">
+                        <h4>Kyla Stewart</h4>
+                        <p>Real Estate Agent</p>
+                    </div>
+                    <div class="column agentColumn">
+                        <img src="../RealEstatePage/person_5.jpg" alt="">
+                        <h4>Rich Moffat</h4>
+                        <p>Real Estate Agent</p>
+                    </div>
+                    <div class="column agentColumn">
+                        <img src="../RealEstatePage/person_6.jpg" alt="">
+                        <h4>Stuart Redman</h4>
+                        <p>Real Estate Agent</p>
+                    </div>
+                <!-- </div>    -->
+            </div>
+        </div>
+        <div class="info row">
+            <img src="../RealEstatePage/property_1.jpg" alt="">
+            <div class="para">
+                <h1>We are the Best Real Estate Company</h1>
+                <p class="bigger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis</p>
+                <p class="small">Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime.</p>
+            
+            <ul>
+                <li>Placeat maxime animi minus</li>
+                <li>Placeat maxime animi minus</li>
+                <li>Placeat maxime animi minus</li>
+                <li>Placeat maxime animi minus</li>
+                <li>Placeat maxime animi minus</li>
+            </ul>
+             <div class="btn"><button class="learn">Learn More</button></div>
+        </div>
+    </div>
+    <div class="services  section">
+        <h1 id="about" style="margin-bottom: 50px;" class="title row">Services</h1>
+        <div class="servicesGrid row">
+            <div class="column servicesColumn">
+                <ion-icon name="home"></ion-icon>
+                <div class="words">
+                    <p class="title">Search Property</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="column servicesColumn">
+                <ion-icon name="cash"></ion-icon>
+                <div class="words">
+                    <p class="title">Buy Property</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="column servicesColumn">
+                <ion-icon name="analytics"></ion-icon>
+                <div class="words">
+                    <p class="title">Investing</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="column servicesColumn">
+                <ion-icon name="business"></ion-icon>
+                <div class="words">
+                    <p class="title">List a Property</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="column servicesColumn">
+                <ion-icon name="search"></ion-icon>
+                <div class="words">
+                    <p class="title">Property locator</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+            <div class="column servicesColumn">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+                <div class="words">
+                    <p class="title">Stated Apps</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="review section row">
+        <h1 id="news" class="title reviewTitle">What our Clients are Saying</h1>
+
+        <div class="multiple-items">
+            <buton class="slick-next slick-arrow slick-next1"></buton>
+            <div class="comment">
+                <p class="quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime</p>
+            
+                <div class="client">
+                        <img src="../RealEstatePage/person_7.jpg" alt="">
+                        <p>Nick Andos</p>
+                </div>
+            </div>
+
+                <div class="comment">
+                    <p class="quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime</p>
+                
+                    <div class="client">
+                        <img src="../RealEstatePage/person_5.jpg" alt="">
+                        <p>Larry Underwood</p>
+                    </div>
+
+                </div>
+                <div class="comment">
+                    <p class="quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit Quo suscipit omnis iste velit maxime</p>
+                    
+                    <div class="client">
+                        <img src="../RealEstatePage/person_1.jpg" alt="">
+                        <p>Fran Goldsmith</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div id="contact" class="contact section">
+        <div class="row formholder">
+            <form class="form" action="">
+                <p>Contact  Form</p>
+                <div class="formInput">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="formInput">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="">
+                </div>
+                <div class="formInput">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="">
+                </div>
+                <div class="formInput">
+                    <label for="message">Message</label>
+                    <textarea class="messageBox" name="message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <input class="submitBtn" type="submit" value="Send Message">
+            </form>
+            <div class="contactMe">
+                <div class="myInfo">
+                    <h2 class="infoTitle">Address</h2>
+                    <p>104 Lampeter Rd</p>
+                </div>
+                <div class="myInfo">
+                    <h2 class="infoTitle">Phone</h2>
+                    <a href="">281-330-8004</a>
+                </div>
+                <div class="myInfo">
+                    <h2 class="infoTitle">Email Address</h2>
+                    <a href="">cswright221@stevenscollege.edu</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+    <footer>
+        <div class="topRow flex section">
+
+            <div class="aboutStated footItem ">
+                <p class="footTitle">About stated</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+            </div>
+
+            <div class="quickLinks footItem">
+                <p class="footTitle">Quick Links</p>
+                <ul class="footLinks">
+                    <a href="">About Us</a>
+                    <a href="">Service</a>
+                    <a href="">Testimonials</a>
+                    <a href="">Contact Us</a>
+                </ul>
+            </div>
+
+            <div class="subscribe footItem">
+                <p class="footTitle">Subscribe to our newsletter</p>
+                <div class="search">
+                    <input class="email" placeholder="Enter Email" type="email" name="email" id="">
+                    <button class="halfRound">Send</button>
+                </div>
+                <div class="socials">
+                    <p class="footTitle follow">Follow Us</p>
+                    <ul class="footSocials">
+                        <a href=""><ion-icon id="fb" name="logo-facebook"></ion-icon></a>
+                    <a href=""><ion-icon id="twitter" name="logo-twitter"></ion-icon></a>
+                    <a href=""><ion-icon id="google" name="logo-google"></ion-icon></a>
+                    <a href=""><ion-icon id="ig" name="logo-instagram"></ion-icon></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="bottomRow section">
+            <p>Copyright © 2019 All rights reserved | This template is made with <ion-icon name="heart"></ion-icon> by <a href="">Colorlib</a></p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://kit.fontawesome.com/44622fc5a1.js" crossorigin="anonymous"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.slider').slick({
+nextArrow: $('#slick-next1'),
+prevArrow: $('#slick-prev1'),
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+  </script>
+<script>
+    $('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+</script>
+<script>
+    window.onscroll = function() {addSticky()};
+
+    function addSticky(){
+        var nav = document.getElementById("nav")
+        var sticky = nav.offsetTop
+        if (window.pageYOffset > sticky) {
+            nav.classList.add("sticky")
+            nav.classList.remove("clear")
+        } else {
+            nav.classList.remove("sticky");
+            nav.classList.add("clear")
+        }
+    }
+
+    function showMenu(){
+        var menu = document.getElementById('menuHidden')
+        menu.classList.toggle("hidden")
+    
+    }
+</script>
+</html>
