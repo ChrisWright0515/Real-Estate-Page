@@ -199,7 +199,7 @@ nav ul li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient( rgba(52, 58, 64, 0.9) ,rgba(52, 58, 64, 0.9)), url(../RealEstatePage/headerBack.jfif);
+    background-image: linear-gradient( rgba(52, 58, 64, 0.9) ,rgba(52, 58, 64, 0.9)), url(headerBack.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
